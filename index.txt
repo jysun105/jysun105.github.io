@@ -22,7 +22,7 @@ Contact
 
 About me
 
-Hello! My name is Jennifer Sun, and I am a third-year graduate student at the Department of Operations Research and Financial Engineering Princeton University, advised by Prof. Elad Hazan from the Computer Science department. I am broadly interested in machine learning theory, and my recent work particularly focuses on online learning and its intersection with optimization and nonstochastic control theory. 
+Hello! My name is Jennifer Sun, and I am a third-year graduate student at the Department of Operations Research and Financial Engineering at Princeton University, advised by Prof. Elad Hazan from the Computer Science department. I am broadly interested in machine learning theory, and my recent work particularly focuses on online learning and its intersection with optimization and nonstochastic control theory. 
 
 During my time at Princeton, I also worked as a student researcher in the algorithmic efficiency team at Google DeepMind, working on memory efficient optimization algorithms. Before coming to Princeton, I graduated Summa Cum Laude from the University of Chicago with a Bachelor of Science degree in Mathematics with honors. 
 
