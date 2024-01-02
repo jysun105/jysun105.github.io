@@ -135,6 +135,10 @@ a-inline {
     display: inline;
 }
 
+a, a:visited {
+    color: blue;
+}
+
 button {
   font: inherit;
   background: none;
