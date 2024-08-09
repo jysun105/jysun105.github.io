@@ -133,6 +133,9 @@ x<!DOCTYPE html>
           <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
 
 
         </ul>
@@ -155,7 +158,7 @@ x<!DOCTYPE html>
 
         <section class="about-text">
           <p>
-            Hello! My name is Jennifer Sun, and I am a third-year graduate student at the Department of <a href="https://orfe.princeton.edu" class="a-inline" style="color: #FFAE42;">Operations Research and Financial Engineering</a> at <a href="https://www.princeton.edu" class="a-inline" style="color: #FFAE42;">Princeton University</a>, advised by Prof. <a href="https://www.ehazan.com" class="a-inline" style="color: #FFAE42;">Elad Hazan</a> from the Department of <a href="https://www.cs.princeton.edu" class="a-inline" style="color: #FFAE42;">Computer Science</a>. I am generously awarded with the <a href="https://gradschool.princeton.edu/financial-support/fellowships/princeton-fellowships/gordon-wu-fellowship" class="a-inline" style="color: #FFAE42;">Gordon Wu Fellowship</a>. I am broadly interested in machine learning theory, and my recent work particularly focuses on online learning and its intersection with optimization and nonstochastic control theory. 
+            Hello! My name is Jennifer Sun, and I am a Ph.D. candidate at the Department of <a href="https://orfe.princeton.edu" class="a-inline" style="color: #FFAE42;">Operations Research and Financial Engineering</a> at <a href="https://www.princeton.edu" class="a-inline" style="color: #FFAE42;">Princeton University</a>, advised by Prof. <a href="https://www.ehazan.com" class="a-inline" style="color: #FFAE42;">Elad Hazan</a> from the Department of <a href="https://www.cs.princeton.edu" class="a-inline" style="color: #FFAE42;">Computer Science</a>. I am generously awarded with the <a href="https://gradschool.princeton.edu/financial-support/fellowships/princeton-fellowships/gordon-wu-fellowship" class="a-inline" style="color: #FFAE42;">Gordon Wu Fellowship</a>. I am broadly interested in machine learning theory, and my recent work particularly focuses on online learning and its intersection with optimization and nonstochastic control theory. 
           </p>
 
           <p>
@@ -297,25 +300,70 @@ x<!DOCTYPE html>
       </article>
 
 
+      <article class="experience" data-page="experience">
+
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="desktop-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Work Experience</h3>
+          </div>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">D.E. Shaw & Co.: <i class="timeline-teaching">Quantitative Research Intern</i></h4>
+              <span>06-08/2024 | New York, NY</span>
+              <p class="timeline-text">
+                Systematic equities.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Google DeepMind: <i class="timeline-teaching">Student Researcher</i></h4>
+              <span>06-08/2023, 10-12/2023 | San Francisco, CA</span>
+              <p class="timeline-text">
+                Dynamic memory allocation extension on the memory efficient optimizer <a href="https://arxiv.org/abs/2302.03764" style="color: #FFAE42;">Sketchy.
+              </p>
+            </li>
+
+            
+          </ol>
+        </section>
+
+
+
+      </article>
+
+
     </div>
 
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
+  <!-- custom js link -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
+  <!-- ionicon link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    // JavaScript to handle page switching
+    document.querySelectorAll('[data-nav-link]').forEach(link => {
+      link.addEventListener('click', function () {
+        document.querySelectorAll('.navbar-link').forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+        document.querySelectorAll('[data-page]').forEach(page => page.classList.remove('active'));
+        document.querySelector(`[data-page="${this.innerText.toLowerCase()}"]`).classList.add('active');
+      });
+    });
+  </script>
 
 </body>
 
